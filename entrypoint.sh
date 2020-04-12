@@ -8,6 +8,11 @@ if [ -n "$INPUT_CF_ORG" ] && [ -n "$INPUT_CF_SPACE" ]; then
 fi
 
 pwd
-
+echo "****** home:"
+ls -l /github/home
+echo "****** ws:"
 ls -l /github/workspace
+echo "****** wf:"
+ls -l /github/workflow
+
 sh -c "cf $*"
