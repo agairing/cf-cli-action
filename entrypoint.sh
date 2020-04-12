@@ -9,5 +9,5 @@ fi
 
 pwd
 
-ls -l /github
+ls -l /github/workspace
 sh -c "cf $*"
