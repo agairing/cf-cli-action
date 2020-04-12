@@ -7,4 +7,7 @@ if [ -n "$INPUT_CF_ORG" ] && [ -n "$INPUT_CF_SPACE" ]; then
   cf target -o "$INPUT_CF_ORG" -s "$INPUT_CF_SPACE"
 fi
 
+pwd
+
+ls -l /github
 sh -c "cf $*"
